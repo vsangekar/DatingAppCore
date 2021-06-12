@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.6.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{9E801AB7-BBF2-4432-9C70-DCF99EE961FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "client", "client", "{1B22D272-CDEC-4A30-96CC-23E4CA7451E3}"
+	ProjectSection(SolutionItems) = preProject
+		client\.browserslistrc = client\.browserslistrc
+		client\.editorconfig = client\.editorconfig
+		client\.gitignore = client\.gitignore
+		client\angular.json = client\angular.json
+		client\karma.conf.js = client\karma.conf.js
+		client\package-lock.json = client\package-lock.json
+		client\package.json = client\package.json
+		client\README.md = client\README.md
+		client\tsconfig.app.json = client\tsconfig.app.json
+		client\tsconfig.json = client\tsconfig.json
+		client\tsconfig.spec.json = client\tsconfig.spec.json
+		client\tslint.json = client\tslint.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E801AB7-BBF2-4432-9C70-DCF99EE961FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E801AB7-BBF2-4432-9C70-DCF99EE961FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E801AB7-BBF2-4432-9C70-DCF99EE961FA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9E801AB7-BBF2-4432-9C70-DCF99EE961FA}.Debug|x64.Build.0 = Debug|Any CPU
+		{9E801AB7-BBF2-4432-9C70-DCF99EE961FA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9E801AB7-BBF2-4432-9C70-DCF99EE961FA}.Debug|x86.Build.0 = Debug|Any CPU
+		{9E801AB7-BBF2-4432-9C70-DCF99EE961FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E801AB7-BBF2-4432-9C70-DCF99EE961FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E801AB7-BBF2-4432-9C70-DCF99EE961FA}.Release|x64.ActiveCfg = Release|Any CPU
+		{9E801AB7-BBF2-4432-9C70-DCF99EE961FA}.Release|x64.Build.0 = Release|Any CPU
+		{9E801AB7-BBF2-4432-9C70-DCF99EE961FA}.Release|x86.ActiveCfg = Release|Any CPU
+		{9E801AB7-BBF2-4432-9C70-DCF99EE961FA}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0802C56-E975-4B6D-B126-818E47627417}
+	EndGlobalSection
+EndGlobal
