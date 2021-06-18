@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container">
         <a class="navbar-brand" href="#">Dating App</a>
-        <ul class="navbar-nav mr-auto" *ngIf="accountService.currentUser$ |async">
+        <ul class="navbar-nav mr-auto" >
+       <ng-container *ngIf="accountService.currentUser$ | async">
             <li class="nav-item">
                 <a class="nav-link " routerLink='/members' routerLinkActive='active'>Matches</a>
             </li>
@@ -12,14 +13,11 @@
             <li class="nav-item">
                 <a class="nav-link" routerLink='/messages' routerLinkActive='active'>Message</a>
             </li>
-
-            <li class="nav-item">
-                <a class="nav-link" (click)="logout()" href="#">logout</a>
-            </li>
+        </ng-container>
         </ul>
 
-        <div class="dropdown" *ngIf="accountService.currentUser$ |async" dropdown>
-            <a class="dropdown-toggle text-light" dropdownToggle>Welcome User</a>
+        <div class="dropdown" *ngIf="(accountService.currentUser$ |async) as user" dropdown>
+            <a class="dropdown-toggle text-light" dropdownToggle>Welcome {{user.username| titlecase}}</a>
             <div class="dropdown-menu mt-3" *dropdownMenu>
               <a class="dropdown-item"> Edit Profile</a>
               <div class="dropdown-divider"></div>
