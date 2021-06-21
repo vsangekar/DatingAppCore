@@ -19,7 +19,7 @@ namespace API.Controllers
             return "secret text";
         }
 
-          [HttpGet("not-found")]
+        [HttpGet("not-found")]
         public ActionResult<string> GetNotFound()
         {
             var thing= _context.Users.Find(-1);
@@ -27,7 +27,7 @@ namespace API.Controllers
             return Ok(thing);
         }
 
-          [HttpGet("server-error")]
+        [HttpGet("server-error")]
         public ActionResult<string> GetServerError()
         {
            var thing= _context.Users.Find(-1);
@@ -35,7 +35,7 @@ namespace API.Controllers
            return thingToReturn;
         }
 
-          [HttpGet("bad-request")]
+        [HttpGet("bad-request")]
         public ActionResult<string> GetBadRequest()
         {
             return BadRequest("This is a Bad Request");
